@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MadWeather</string>
+
+    <string name="hello_world">Yolo!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_notification_receiver">NotificationReceiverActivity</string>
+    <string name="title_activity_android_sqlite_test">AndroidSQLiteTestActivity</string>
+    <string name="title_activity_weather_settings">WeatherSettings</string>
+    <string name="title_activity_alarm_settings">AlarmSettings</string>
+    <string name="title_activity_some_blank">SomeBlankActivity</string>
+    <string name="tab">\u0009</string>
+    <string name="title_activity_instructions">InstructionsActivity</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: concatenate days with
+         this character, i.e. "Mon, Tue, Wed" -->
+    <string name="day_concat">", "</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+     screen to identify repetition schedule: special case for when
+     the alarm is set to repeat every day -->
+    <string name="every_day">every day</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat -->
+    <string name="never">Never</string>
+</resources>

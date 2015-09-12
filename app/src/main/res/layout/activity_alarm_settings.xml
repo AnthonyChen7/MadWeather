@@ -1,0 +1,211 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.madweather.AlarmSettings"
+        android:focusable="false">
+
+        <LinearLayout
+            android:id="@+id/Sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/sundayBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:checked="false"
+                android:text="Sunday"
+                android:textSize="@dimen/checkBoxTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SundayTime"
+                android:text="12:01am-12:59am"
+                android:textSize="@dimen/textViewTextSize"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/Monday"
+            android:layout_below="@+id/Sunday">
+
+            <CheckBox
+                android:id="@+id/mondayBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="Monday"
+                android:textSize="@dimen/checkBoxTextSize"
+                android:layout_below="@+id/Sunday"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MondayTime"
+                android:text="6:50am-10:11am"
+                android:textSize="@dimen/textViewTextSize"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/Tuesday"
+            android:layout_below="@+id/Monday">
+
+            <CheckBox
+                android:id="@+id/tuesdayBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textSize="@dimen/checkBoxTextSize"
+                android:layout_below="@+id/Monday"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/marginTop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TuesdayTime"
+                android:text="6:09pm-10:32pm"
+                android:textSize="@dimen/textViewTextSize"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/Wednesday"
+            android:layout_below="@+id/Tuesday">
+
+            <CheckBox
+                android:id="@+id/wednesdayBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="Wednesday"
+                android:textSize="@dimen/checkBoxTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/WednesdayTime"
+                android:text="12:00pm-12:00pm"
+                android:textSize="@dimen/textViewTextSize"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/Thursday"
+            android:layout_below="@+id/Wednesday">
+
+            <CheckBox
+                android:id="@+id/thursdayBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/wednesdayBox"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="Thursday"
+                android:textSize="@dimen/checkBoxTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ThursdayTime"
+                android:text="2:00pm-10:00pm"
+                android:textSize="@dimen/textViewTextSize"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/Friday"
+            android:layout_below="@+id/Thursday">
+
+            <CheckBox
+                android:id="@+id/fridayBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/thursdayBox"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="Friday"
+                android:textSize="@dimen/checkBoxTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FridayTime"
+                android:text="6:00pm-10:00pm"
+                android:textSize="@dimen/textViewTextSize"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:id="@+id/Saturday"
+            android:layout_below="@+id/Friday">
+
+            <CheckBox
+                android:id="@+id/saturdayBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fridayBox"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="Saturday"
+                android:textSize="@dimen/checkBoxTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SaturdayTime"
+                android:text="6:00pm-10:00pm"
+                android:textSize="@dimen/textViewTextSize"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

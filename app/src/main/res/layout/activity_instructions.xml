@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.madweather.InstructionsActivity">
+
+    <TextView
+        android:text="\t
+        This app checks and notifies you when weather of your interest is detected at the configured minimum probability. For each day of the week that the alarm is active, it will determine the times where you will not be home based on the 'start time' and 'end time' provided and check the weather for you at the 'start time.'
+        \n\n\t
+        In order this to be successful, your wifi (or data) must be on and you must provide a location, whether it's your house address or general city. We will not implement a gps feature soon due to the time complexity of such a trivial feature.
+        \n\n These are the currently known bugs in our app:
+        \n -The notification is uselessly displayed as 'please swipe down to view message' on Lollipop, this is android's fault.
+        \n\s To resolve this, unlock your phone and then pull down on the notification drawer, then swipe away all notifications above the MadWeather notification and then close the music widget that is displayed above as well.
+        \n\s If you missed a daily notification because of this glitch, press the Check Weather Now button to recreate the notification.
+        \n -If anymore bugs are found, please email norman.li.438@gmail.com to report them.
+        \n\n Weather information powered by Forecast at http://forecast.io/."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+</RelativeLayout>

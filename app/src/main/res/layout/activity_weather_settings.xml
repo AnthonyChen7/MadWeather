@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="500dp"
+            android:text="bullshit"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:text="Location"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/locationBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/location"
+            android:layout_alignRight="@+id/forecastDescription"
+            android:layout_below="@+id/location" />
+
+        <TextView
+            android:id="@+id/forecastDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationBox"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="Select the forecast(s) you would like to receive notifications for"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/rainCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forecastDescription"
+            android:layout_marginLeft="16dp"
+            android:checked="false"
+            android:text="Rain"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/snowCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rainCheck"
+            android:layout_marginLeft="16dp"
+            android:checked="false"
+            android:text="Snow"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/hailCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/snowCheck"
+            android:layout_marginLeft="16dp"
+            android:checked="false"
+            android:text="Hail"
+            android:textSize="20dp" />
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/thunderCheck"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/hailCheck"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:checked="false"-->
+            <!--android:text="Thunder"-->
+            <!--android:textSize="20dp" />-->
+
+        <TextView
+            android:id="@+id/probabilityThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/hailCheck"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="Probability Threshold"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/probability"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/probabilityThreshold"
+            android:layout_toRightOf="@+id/probabilityThreshold"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:text="60" />
+
+        <TextView
+            android:id="@+id/percentSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/probability"
+            android:layout_toRightOf="@+id/probability"
+            android:layout_marginRight="400dp"
+            android:text="%"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/probabilityThresholdDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/probabilityThreshold"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="The lowest acceptable chance of bad weather occuring before you are notified"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/dailyResetCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/probabilityThresholdDescription"
+            android:layout_marginTop="30dp"
+            android:checked="false"
+            android:text=""
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/dailyResetDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check this box if your alarm is not working. This is most likely required for those using Sony Xperia phones."
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/dailyResetCheck"
+            android:layout_toEndOf="@+id/dailyResetCheck" />
+
+    </RelativeLayout>
+</ScrollView>
